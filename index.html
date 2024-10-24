@@ -15,9 +15,24 @@
             margin-top: 50px;
             color: #2c3e50;
         }
+        h2 {
+            margin-top: 30px;
+            color: #2c3e50;
+        }
         p {
             font-size: 18px;
             color: #34495e;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        .example {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 3px solid #ccc;
+            margin: 20px 0;
         }
         button {
             margin-top: 20px;
@@ -38,5 +53,61 @@
     <p>This API provides data about extinct animals and birds. You can use it to get information like species name, extinction year, and location.</p>
     
     <button onclick="window.location.href='/animals'">Get ExtinctAPI Data</button>
+
+    <h2>API Documentation</h2>
+    <p>The ExtinctAPI allows you to retrieve information about various extinct species.</p>
+
+    <h3>Base URL</h3>
+    <p><code>https://extinct-api-1.onrender.com</code></p>
+
+    <h3>Endpoints</h3>
+    <h4>GET /animals</h4>
+    <p>Fetches a list of extinct animals with their details.</p>
+
+    <h5>Example Request:</h5>
+    <div class="example">
+        <code>GET https://extinct-api-1.onrender.com/animals</code>
+    </div>
+
+    <h5>Example Response:</h5>
+    <pre class="example">
+[
+  {
+    "name": "Dodo",
+    "species": "Raphus cucullatus",
+    "extinct_year": 1662,
+    "location": "Mauritius"
+  },
+  {
+    "name": "Passenger Pigeon",
+    "species": "Ectopistes migratorius",
+    "extinct_year": 1914,
+    "location": "North America"
+  }
+]
+    </pre>
+
+    <h3>How to Use the API</h3>
+    <p>You can make HTTP GET requests to the endpoint to retrieve data.</p>
+    
+    <h4>Python Example:</h4>
+    <div class="example">
+        <pre><code>
+import requests
+
+response = requests.get('https://extinct-api-1.onrender.com/animals')
+data = response.json()
+print(data)
+        </code></pre>
+    </div>
+
+    <h4>JavaScript Example (for web):</h4>
+    <div class="example">
+        <pre><code>
+fetch('https://extinct-api-1.onrender.com/animals')
+  .then(response => response.json())
+  .then(data => console.log(data));
+        </code></pre>
+    </div>
 </body>
 </html>
