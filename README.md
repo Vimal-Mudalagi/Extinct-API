@@ -25,20 +25,33 @@ This project also includes a simple web page that explains the API and provides 
 ## How to Run Locally
 
 1. Clone the repository:
+   
    ```bash
    git clone https://github.com/Vimal-Mudalagi/Extinct-API.git
 
-2. Navigate to the project folder:
+3. Navigate to the project folder:
+   
    ```bash
    cd Extinct-API
 
-3. Install the required packages:
+5. Install the required packages:
+   
    ```bash
    pip install -r requirements.txt
 
-4. Run the server:
+7. Run the server:
+   
    ```bash
    python extinctapi.py
 
-5. Open your browser and go to http://127.0.0.1:5000/animals to see the API in action.
+9. Open your browser and go to http://127.0.0.1:5000/animals to see the API in action.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+
+## Acknowledgments
+
+This API was created as a learning project to practice Python and Flask. It helps to explore information about extinct animals and birds.
+   
    
