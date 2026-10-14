@@ -6,7 +6,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
 ![Live API](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fextinct-api-1.onrender.com%2Fanimals&label=Live%20API)
 
-A lightweight, Dockerized Flask REST API that returns JSON data about extinct animals and birds, including species, extinction year, and location.
+A Dockerized Flask REST API providing data on extinct animals and birds, including species names, extinction years, and locations.
 
 Repository: https://github.com/Vimal-Mudalagi/Extinct-API
 
